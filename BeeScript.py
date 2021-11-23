@@ -74,4 +74,4 @@ def run_file(filename):
 __all__ = ["run", "run_file"]
 
 if __name__ == "__main__":
-  run_file("beescript-example.txt")
+  run_file("BeeScript-example.txt")
