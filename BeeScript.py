@@ -11,7 +11,7 @@ class BeeScriptError(Exception):
 class Stack():
   
   def __init__(self):
-    self.data = deque() #Use deque for performance
+    self.data = deque()
     
   def push(self, value):
     self.data.append(value)
