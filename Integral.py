@@ -124,6 +124,8 @@ def run(code):
 def run_file(filename):
     run(open(filename).read())
 
+__all__ = ["run", "run_file"]
+
 if __name__ == "__main__":    
     run("""318x^105 + 315x^104 + 312x^103 + 309x^102 + 306x^101 + 303x^100 + 300x^99 + 297x^98 + 686x^97 + 97x^96 + 
     288x^95 + 285x^94 + 282x^93 + 279x^92 + 644x^91 + 91x^90 + 270x^89 + 267x^88 + 88x^87 + 261x^86 + 
