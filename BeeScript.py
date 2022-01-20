@@ -42,7 +42,7 @@ def run(code):
             try:
                 index = int(arg)
             except ValueError:
-                raise BeeScriptError("AVIATE value must be an integer")
+                raise BeeScriptError("AVIATE value must be an integer") from None
             stack.push(ord(bee_movie[index]))
         elif command == "BEE":
             stack.push(stack.peek())
@@ -55,7 +55,7 @@ def run(code):
             try:
                 line_num = int(arg)
             except ValueError:
-                raise BeeScriptError("AVIATE value must be an integer")
+                raise BeeScriptError("AVIATE value must be an integer") from None
             if stack.pop() != 0:
                 i = line_num - 1
                 continue
