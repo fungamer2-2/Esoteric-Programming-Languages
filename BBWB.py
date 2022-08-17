@@ -57,8 +57,7 @@ def run(code):
 		
 def run_file(filename):
 	run(open(filename).read())
-	
-	
+		
 if __name__ == "__main__":		
 	code = """
 	+++++++++^#[>v++++++++^#<v-^#]>v:
