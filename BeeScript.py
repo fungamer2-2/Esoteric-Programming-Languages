@@ -55,7 +55,7 @@ def run(code):
             try:
                 line_num = int(arg)
             except ValueError:
-                raise BeeScriptError("AVIATE value must be an integer") from None
+                raise BeeScriptError("FLY value must be an integer") from None
             if stack.pop() != 0:
                 i = line_num - 1
                 continue
